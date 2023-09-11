@@ -1,0 +1,191 @@
+@media (max-width: 1600px) {
+  .help__features-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr max-content max-content;
+    grid-template-areas:
+      'support  payment'
+      'bonus  assurance'
+      'refund  delivery';
+  }
+
+  .help__features-payment {
+    &::after {
+      content: '';
+      position: absolute;
+      background-image: url(../../img/payment-feature.png);
+      width: 200px;
+      height: 200px;
+      top: 50%;
+      right: -50px;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .help__features-img {
+    display: flex;
+    align-items: center;
+  }
+
+  .help__features-support {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .help__features-bonus {
+    &-list,
+    &-title {
+      position: relative;
+      z-index: 2;
+    }
+
+    &::after {
+      z-index: 1;
+    }
+  }
+}
+
+@media (max-width: 1350px) {
+  .header__nav-list {
+    display: none;
+  }
+
+  .header__services {
+    margin-right: 0;
+  }
+
+  .content-inner {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding-left: 15px;
+  }
+
+  .menu-dropdown__column:nth-child(4) {
+    display: none;
+  }
+
+  .search-suggestions__block-img {
+    display: none;
+  }
+
+  .search-suggestions__block-price {
+    margin-left: 10px;
+  }
+
+  .search-suggestions__block-link {
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 1160px) {
+  .logo {
+    margin-right: 20px;
+  }
+
+  .menu__buttons-orders {
+    display: none;
+  }
+
+  .menu__buttons-compare {
+    display: none;
+  }
+
+  .menu__buttons-account {
+    margin-right: 8px;
+  }
+
+  .search-suggestions__wrap {
+    padding: 22px 16px 32px 16px;
+  }
+
+  .help__features-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, max-content);
+    grid-template-areas:
+      'support'
+      'payment'
+      'bonus'
+      'assurance'
+      'refund'
+      'delivery';
+  }
+
+  .help__features-support {
+    padding: 13px 15px 13px 49px;
+  }
+
+  .footer-container {
+    justify-content: center;
+    grid-template-columns: repeat(2, max-content);
+    grid-template-rows: repeat(4, max-content);
+    grid-template-areas:
+      'helper about'
+      'contacts address'
+      'app socials'
+      'discounts discounts';
+  }
+
+  .footer-block {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 960px) {
+  .header {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu-mobile {
+    display: flex;
+  }
+
+  .help {
+    display: none;
+  }
+
+  .help-mobile {
+    display: block;
+  }
+
+  .breadcrumbs {
+    display: none;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  .footer-mobile {
+    display: block;
+  }
+}
+
+@media (max-width: 430px) {
+  .app-mobile__box {
+    flex-direction: column;
+  }
+
+  .app-mobile__img {
+    text-align: center;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media (max-width: 410px) {
+  .helper-mobile__content-btn {
+    padding: 18px 0;
+    width: 100%;
+  }
+
+  .footer-mobile__btn a {
+    padding: 16px 30px;
+  }
+}
