@@ -13,7 +13,6 @@ function openTab(event, tabId) {
   event.currentTarget.classList.add('active');
 }
 
-// Добавляем класс "active" к первой кнопке
 tabLinks[0].classList.add('active');
 
 tabLinks.forEach((tabLink) => {
